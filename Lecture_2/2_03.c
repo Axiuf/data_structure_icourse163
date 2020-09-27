@@ -1,4 +1,5 @@
 // 堆栈的数组实现
+
 #include <stdbool.h>
 typedef int ElementType;
 

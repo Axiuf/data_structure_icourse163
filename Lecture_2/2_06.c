@@ -1,4 +1,5 @@
 // 队列的链表实现
+
 #include <stdbool.h>
 #include <stddef.h>
 typedef int ElementType;

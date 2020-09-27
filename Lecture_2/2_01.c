@@ -1,8 +1,8 @@
 // 利用数组实现线性表
+
 #include <stdbool.h>
 typedef int ElementType; // 自定义元素的类型
 #define MAXSIZE 10 //自定义线性表的长度
-
 
 typedef int Position;
 typedef struct LNode *List;

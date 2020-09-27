@@ -1,8 +1,8 @@
 // 利用链表实现线性表
+
 #include <stdbool.h>
 #include <stddef.h>
 typedef int ElementType; // 自定义元素的类型
-
 
 typedef struct LNode *PtrToLNode;
 struct LNode {

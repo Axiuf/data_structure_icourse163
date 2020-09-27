@@ -1,10 +1,10 @@
 // 堆栈的链表实现
+
 #include <stdbool.h>
 #include <stddef.h>
 typedef int ElementType;
 
 #define ERROR NULL
-
 
 typedef struct SNode *PtrToSNode;
 struct SNode {
