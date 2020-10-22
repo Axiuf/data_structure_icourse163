@@ -1,4 +1,5 @@
 // 03-树3 Tree Traversals Again (25分)
+// 很奇怪，VScode中文件名为 "08.c" 会被识别为 C++ 文件。
 
 #include <stdio.h>
 #include <stdlib.h>
