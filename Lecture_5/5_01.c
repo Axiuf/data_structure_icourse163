@@ -107,3 +107,4 @@ void BuildHeap( MaxHeap H )
     /* 从最后一个结点的父节点开始，到根结点1 */
     for( i = H->Size/2; i>0; i-- )
         PercDown( H, i );
+}
