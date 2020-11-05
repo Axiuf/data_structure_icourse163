@@ -14,10 +14,10 @@ The file structure is shown below :
     ├── Lecture_3 # Tree: binary tree
     ├── Lecture_4 # Tree: binary search tree, balanced binary tree
     ├── Lecture_5 # Tree: heap, Huffman tree, set
-    ├── Lecture_6 # Map: DSF, BSF
+    ├── Lecture_6 # Graph: DSF, BSF
     ├── Lecture_7 # Coursework review of tree
     │
     └── PTA # My coursework for Programming Teaching Assistant (PTA)
 ```
 
-PTA的题目集为：[中国大学MOOC-陈越、何钦铭-数据结构-2020秋](https://pintia.cn/problem-sets/1302953266564911104) (需要访问权限)。
+PTA的题目集为：[中国大学MOOC-陈越、何钦铭-数据结构-2020秋(需要访问权限)](https://pintia.cn/problem-sets/1302953266564911104)
