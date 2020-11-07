@@ -78,18 +78,18 @@ struct QNode
     int front;
     int rear;
 };
-typedef struct QNode *Quene;
+typedef struct QNode *Queue;
 
-Quene CreateQuene()
+Queue CreateQueue()
 {
-    Quene Q = (Quene) malloc(sizeof(struct QNode));
+    Queue Q = (Queue) malloc(sizeof(struct QNode));
     memset(Q->List, -1, sizeof(Q->List));
     Q->front = Q->rear = 0;
 
     return Q;
 }
 
-void InsertQuene(Quene Q, int i)
+void InsertQueue(Queue Q, int i)
 {
     if (((Q->rear + 1) % MaxSize) != Q->front)
     {
@@ -98,7 +98,7 @@ void InsertQuene(Quene Q, int i)
     }
 }
 
-int PopQuene(Quene Q)
+int PopQueue(Queue Q)
 {
     int pop = -1;
     if (Q->front != Q->rear)
@@ -111,7 +111,7 @@ int PopQuene(Quene Q)
     return pop;
 }
 
-bool IsQueneEmpty(Quene Q)
+bool IsQueueEmpty(Queue Q)
 {
     if (Q->front == Q->rear)
     {
@@ -129,18 +129,18 @@ int BFS(LGraph Graph, Vertex i)
     int count = 0, level;
     int pop, last, tail;
     PtrToAdjNode next;
-    Quene Q = CreateQuene();
+    Queue Q = CreateQueue();
     if (Graph->IsVisited[i] == 0)
     {
         Graph->IsVisited[i] = 1;
         count++;
         level = 0;
         last = i;
-        InsertQuene(Q, i);
+        InsertQueue(Q, i);
 
-        while (!IsQueneEmpty(Q))
+        while (!IsQueueEmpty(Q))
         {
-            pop = PopQuene(Q);
+            pop = PopQueue(Q);
             next = Graph->G[pop].FirstEdge;
             while (next != NULL)
             {
@@ -148,7 +148,7 @@ int BFS(LGraph Graph, Vertex i)
                 {
                     Graph->IsVisited[next->AdjV] = 1;
                     count++;
-                    InsertQuene(Q, next->AdjV);
+                    InsertQueue(Q, next->AdjV);
                     tail = next->AdjV;
                 }
                 next = next->Next;

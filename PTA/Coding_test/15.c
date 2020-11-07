@@ -77,18 +77,18 @@ struct QNode
     int front;
     int rear;
 };
-typedef struct QNode *Quene;
+typedef struct QNode *Queue;
 
-Quene CreateQuene()
+Queue CreateQueue()
 {
-    Quene Q = (Quene) malloc(sizeof(struct QNode));
+    Queue Q = (Queue) malloc(sizeof(struct QNode));
     memset(Q->List, -1, sizeof(Q->List));
     Q->front = Q->rear = 0;
 
     return Q;
 }
 
-void InsertQuene(Quene Q, int i)
+void InsertQueue(Queue Q, int i)
 {
     if (((Q->rear + 1) % MaxSize) != Q->front)
     {
@@ -97,7 +97,7 @@ void InsertQuene(Quene Q, int i)
     }
 }
 
-int PopQuene(Quene Q)
+int PopQueue(Queue Q)
 {
     int pop = -1;
     if (Q->front != Q->rear)
@@ -114,7 +114,7 @@ int PopQuene(Quene Q)
 void BFS(Graph G, int i)
 {
     int pop, j;
-    Quene Q = CreateQuene();
+    Queue Q = CreateQueue();
 
     if (G->IsVisited[i] == 0)
     {
@@ -122,11 +122,11 @@ void BFS(Graph G, int i)
         Set[Count] = i;
         Count++;
 
-        InsertQuene(Q, i);
+        InsertQueue(Q, i);
 
         while (Q->front != Q->rear)
         {
-            pop = PopQuene(Q);
+            pop = PopQueue(Q);
             for (j = 0; j < G->nV; j++)
             {
                 if (G->Edge[pop][j] == 1 && G->IsVisited[j] == 0)
@@ -134,7 +134,7 @@ void BFS(Graph G, int i)
                     G->IsVisited[j] = 1;
                     Set[Count] = j;
                     Count++;
-                    InsertQuene(Q, j);
+                    InsertQueue(Q, j);
                 }
             }
         }

@@ -8,8 +8,8 @@ The file structure is shown below :
 .
 └── GBM_scRNA_seq
     ├── Lecture_1 # Introduction to data structure and algorithm
-    │   ├── PDF # Teaching materials
-    │   └── xx.c # Teaching code
+    │   ├── PDF # Lecture slides
+    │   └── xx.c # Lecture codes
     ├── Lecture_2 # Linear structure: linear list, stack, queue
     ├── Lecture_3 # Tree: binary tree
     ├── Lecture_4 # Tree: binary search tree, balanced binary tree
