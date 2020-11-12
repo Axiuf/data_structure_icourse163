@@ -16,6 +16,8 @@ The file structure is shown below :
     ├── Lecture_5 # Tree: heap, Huffman tree, set
     ├── Lecture_6 # Graph: DSF, BSF
     ├── Lecture_7 # Coursework review of tree
+    ├── Lecture_8 # Graph: minimum spanning tree, topological sort
+    ├── Lecture_9 # Sort algorithm
     │
     └── PTA # My coursework for Programming Teaching Assistant (PTA)
 ```
