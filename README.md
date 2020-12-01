@@ -20,7 +20,7 @@ The file structure is shown below :
     ├── Lecture_07 # Coursework review of tree
     ├── Lecture_08 # Graph: minimum spanning tree, topological sort
     ├── Lecture_09 # Sort algorithm: simple sort, Shell sort, heap sort, merge sort
-    ├── Lecture_10 # Sort algorithm: quick sort, table sort,    radix sort
+    ├── Lecture_10 # Sort algorithm: quick sort, table sort, radix sort
     │
     └── PTA # My coursework for Programming Teaching Assistant (PTA)
 ```
